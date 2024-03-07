@@ -4,6 +4,7 @@ void main() {
   print("welcome to leap year calculator!");
   print("enter the year: ");
   int? year = int.parse(stdin.readLineSync()!);
+  isLeap(year);
 }
 
 void isLeap(var year) {

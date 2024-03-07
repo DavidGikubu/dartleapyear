@@ -7,14 +7,10 @@ void main() {
   isLeap(year);
 }
 
-void isLeap(var year) {
-  if (year % 4 == 0) {
-    if (year % 100) {
-      print("$year is not a leap year..");
-    } else if (year % 4 == 0 && year % 400 == 0) {
-      print("$year is a leap year");
-    } else {
-      print("wrong input");
-    }
+void isLeap(int year) {
+  if (year % 4 == 0 && year % 400 == 0 || year % 100 != 0) {
+    print("$year is a leap year");
+  } else {
+    print("$year is not a leap year..");
   }
 }
